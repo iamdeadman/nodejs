@@ -1,5 +1,7 @@
 // Program to extract url from the request and writing in that particular file
-
+// To run use curl -d "data" url?fileName=""/&appendFlag=true
+// Note: necessary to use /& in ubuntu terminal otherwise thinks & for creating background process or something like that
+// also program is in the most basic version, so don't expect any error handling done here
 var http = require('http');
 var url = require('url');
 var querystring = require('querystring');
